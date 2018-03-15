@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+		<title>播报</title>
+		<meta name="csrf-param" content="authenticity_token">
+		<meta name="csrf-token" content="UwEHQ9JrFFg8jVp6ua7vyFfl6tMeYUNncMMaamd8O5Zp/ffJwgbX+eU3ANqU6wJEUjY/TVoltgp7euY/7XjjOQ==">
+		<link rel="stylesheet" media="all" href="./list/web-9cd48403b6d78c77ef9e.css">
+		<link rel="stylesheet" media="all" href="./list/web-b902b38f60020358f549.css">
+		<link rel="stylesheet" media="all" href="./list/entry-468d5669dc55b0d2a6c2.css">
+		<link rel="stylesheet" media="all" href="./img/web-b902b38f60020358f549.css">
+		<link rel="stylesheet" media="all" href="./img/entry-c3f65dacaf053f3ad67d.css">
+		<!-- 导航栏 -->
+		<style type="text/css">
+			body{
+				background-color: #f3f6f7;
+			}
+			.nav_left img {
+				border-radius: 50px;
+				width: 30px;
+				height: 30px;
+			}
+			.nav {
+				position: relative;
+				width: 100%;
+				height: 64px;
+				background: #fff;
+				min-width: 1200px;
+			}
+			
+			.nav_left {
+				float: right;
+				margin-right: 1.5%;
+				height: 50px;
+				line-height: 50px;
+			}			
+			.nav_left img {
+				border-radius: 50px;
+				width: 30px;
+				height: 30px;
+			}			
+			.nav_logo {
+				width: 64px;
+				height: 64px;
+				float: left;
+			}
+			/*添加*/			
+			.navs_star {
+				color: rgb(79, 163, 237);
+				margin: 0 20px;
+				font-size: 26px;
+				cursor: pointer;
+			}			
+			.navs_item {
+				color: #666666;
+				margin: 0 20px;
+				font-size: 18px;
+			}			
+			.nav_beta {
+				display: inline-block;
+				float: left;
+				margin-left: -2px;
+				padding-top: 32px;
+				color: #59b6d7;
+			}			
+			.nav_list {
+				width: 1080px;
+				margin: auto;
+			}			
+			.nav_list .navs {
+				display: flex;
+				height: 62px;
+				margin-bottom: 0;
+				justify-content: flex-start;
+				align-items: center;
+				float: left;
+			}			
+			.nav_list .navs li {
+				float: left;
+				text-align: center;
+				margin-right: 15px;
+				transition: all .3s;
+				position: relative;
+			}
+			
+			.nav_list .navs li a {
+				display: inline-block;
+				margin: 0 10px;
+				padding: 20px 10px;
+				/*color: #59b6d7;*/
+				color: #666666;
+				font-size: 18px;
+				transition: all .1s;
+				border-bottom: 2px solid transparent;
+			}
+			
+			.nav_list .navs li a:hover {
+				color: #59b6d7 !important;
+				border-bottom: 2px solid #59b6d7;
+			}
+			
+			
+			.nav_list .nav_search {
+				position: relative;
+				width: 235px;
+				height: 28px;
+				border-radius: 50px;
+				margin-top: 12px;
+				background-color: #f3f6f7;
+				float: left;
+				margin-left: 29%;
+			}
+			
+			.nav_list .nav_input {
+				width: calc(100% - 35px);
+				height: 100%;
+				font-size: 12px;
+				color: #333;
+				border: none;
+				outline: none;
+				background: transparent;
+				padding-left: 15px;
+				vertical-align: middle;
+			}
+			
+			.nav_list .nav_search_icon {
+				cursor: pointer;
+				position: absolute;
+				top: 50%;
+				right: 10px;
+				transform: translateY(-50%);
+				color: #59b6d7;
+			}
+			.row{
+				margin-top: 20px;
+			}
+			.row_left{
+				width: 100%;
+				height: 100%;
+				background-color: white !important;
+				border-radius: 8px;
+				padding: 22px 50px;
+			}
+			.row_right{
+				width: 94%;
+				height: 100%;
+				background-color: white !important;
+				border-radius: 8px;
+				text-align: center;
+				padding-top:40px;
+			}
+			.code_share{
+				margin-top: 20px;
+			}
+			.title{
+				font-size: 18px;
+   				font-weight: 700;
+   				line-height: 28px;
+			}
+			.show-content{
+				font-size: 16px;
+			}
+			.show-content-free p{
+				line-height: 30px;
+			}
+		</style>
+
+	</head>
+
+	<body lang="zh-CN" class="reader-black-font">
+		<!-- 全局顶部导航栏 -->
+		<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+
+			<!--导航栏-->
+			<div class="nav nav_border">
+				<div class="nav_list clearfix">
+					<div class="navs">
+						<div class="navs_star">彗星</div>
+						<a target="_self" href="#" class="navs_item">播报 </a>
+						<!--<a target="_self" href="#" class="navs_item">链库 </a>
+-->					</div>
+
+					<div class="nav_search">
+						<input class="nav_input" type="text" placeholder="输入关键词搜索" value="" id="head_search" >
+						<!--'<a class="nav_search_icon">
+							<svg class="icon" aria-hidden="true">
+								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-sousuo"></use>
+							</svg>
+						</a>'-->
+
+					</div>
+					<div class="nav_left">
+						<a href="http://www.huixing.io/feeds">
+							<img src="img/025df2df-65fe-471a-bd94-c888fc89e959.jpg">
+						</a>
+					</div>
+				</div>
+			</div>
+
+		</nav>
+
+		<!--<div class="note">
+			<a target="_blank" href="https://www.jianshu.com/apps/download?utm_source=sbc" id="web-note-ad-fixed"><span class="close">×</span></a>
+			<div class="post">
+				<div class="article">
+					<h1 class="title" id="detail_title"></h1>
+
+					<div class="article" style="width: 100%;height: 50px;"></div>
+					<div data-note-content="" class="show-content">
+						<div class="show-content-free">
+							<p id="context"></p>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>	-->
+		<div class="container index">
+			<!--<a target="_blank" href="https://www.jianshu.com/apps/download?utm_source=sbc" id="web-note-ad-fixed"><span class="close">×</span></a>-->
+			<div class="row">
+				<div class="col-xs-16 main">
+					<div class="row_left">
+						<h1 class="title" id="detail_title"></h1>
+
+						<div class="article" style="width: 100%;height: 30px;"></div>
+						<div data-note-content="" class="show-content">
+							<div class="show-content-free">
+								<p id="context"></p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-7 col-xs-offset-1 aside">
+					<div class="row_right">
+						<img src="img/gh_e6b369c17e63_860.jpg"  width="200px" height="200px"/>
+						<p class="code_share">扫描分享彗星播报</p>
+					</div>
+				</div>
+			</div>
+		</div>	
+			<script src="js/jquery-2.1.1.js"></script>
+			<script src="js/bootstrap.min.js"></script>
+			<script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>		<!-- Peity -->
+			<script src="js/plugins/peity/jquery.peity.min.js"></script>
+			<script src="js/plugins/pace/pace.min.js"></script>
+
+			<script src="js/plugins/jquery-ui/jquery-ui.min.js"></script>
+
+			<!-- Toastr -->
+			<script src="js/plugins/toastr/toastr.min.js"></script>
+			<script src="js/common.js"></script>
+			<script src="js/jquery.cookie.js"></script>
+
+			<script>
+					$("#head_search").keydown(function(e) {  
+          			if (e.keyCode == 13) {  
+          				var keywords = $('#head_search').val()
+          				console.log(keywords)
+          				debugger
+                 		 window.location.href='http://127.0.0.1:8020/NewsPaperFront/index.html?keys='+keywords;
+							
+          			}  
+     				});  
+				function pressHome(){						
+					//第一步 获取输入关键词
+					
+					
+					//当前页跳转到首页 ，传递关键词
+					 
+				}
+				function detail() {
+					console.log("test");
+					var newsId = window.localStorage.getItem('detail')
+					//ajax獲取詳情數據
+
+					var uri = '/news/' + newsId;
+					doGet(uri, function(res) {
+						if(res != null && res.code == 0) {
+
+							$('#detail_title').html(res.data.title)
+							if(res.data.content != null && res.data.content != undefined) {
+								$('#context').html(res.data.content)
+							} else {
+								$('#context').html(res.data.shortContent)
+							}
+						}
+					}, "json");
+
+				}
+				detail();
+			</script>
+	</body>
+
+</html>
